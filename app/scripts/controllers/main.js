@@ -33,4 +33,16 @@ angular.module('notifiApp')
         });
     }
 
+
+    $scope.getEvents();
+    setInterval(function(){
+
+    	console.log("GET:");
+
+    	$scope.getEvents();
+
+    }, 60000);
+
+
+
   });
