@@ -1,0 +1,22 @@
+body {
+  padding: 0;
+  color: silver;
+  background-color: #404040;
+}
+
+#main{
+  background-color: #262626;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+}
