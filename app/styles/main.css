@@ -12,6 +12,35 @@ body {
   margin: 30px 0;
 }
 
+/*table*/
+table{
+  font-size: 10px;
+  --margin-left: 10px;
+  --margin-right: 10px;
+  margin: 5px;
+  display: inline-table;
+}
+.table-bordered > thead > tr > th{
+  border:1px solid black;
+}
+.table-bordered > tbody > tr > td{
+  border:1px solid black;
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: #262626;
+   color: silver;
+}
+.table-striped > tbody > tr:nth-child(2n) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: #474747;
+   color: silver;
+}
+th{
+  --background-color: rgba(255, 76, 0, 1);
+  color:black;
+}
+td{
+  --background-color: green;
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {

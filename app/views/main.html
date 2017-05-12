@@ -1,3 +1,22 @@
 <div id="main" class="container">
-  asd
+
+  <table class="table-striped table-bordered table-condensed">
+    <thead>
+      <th style="background-color: rgba(255, 76, 0, 1);">Nume</th>
+      <th style="background-color: rgba(255, 76, 0, 1);">Telefon</th>
+      <th style="background-color: rgba(255, 76, 0, 1);">Email</th>
+      <th style="background-color: rgba(255, 76, 0, 1);">Data</th>
+      <th style="background-color: rgba(255, 76, 0, 1);">Operațiune</th>
+    </thead>
+    <tbody>
+      <tr ng-repeat="i in appoints.slice().reverse()">
+        <td>{{i.name}}</td>
+        <td>{{i.phone}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.start}}</td>
+        <td>{{i.title}}</td>
+      </tr>
+    </tbody>
+  </table>
+
 </div>

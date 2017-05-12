@@ -14,6 +14,8 @@
 
 angular.module('notifiApp')
   .controller('MainCtrl', function ($scope, $rootScope, $http) {
+
+    $http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
   	
   	$scope.appoints = [];
 
@@ -33,6 +35,16 @@ angular.module('notifiApp')
         });
     }
 
+    /*
+    $scope.mod = function(toDel){
+    	var req = {
+    		method: 'POST',
+    		url: 'http://localhost:3000/?del=1',
+    		data: toDel
+    	}
+    	console.log(req.data);
+        $http(req).then(function(){console.log('Blanao'); $scope.getEvents();}, function(){console.log('NO POST')});
+    }*/
 
     $scope.getEvents();
     setInterval(function(){
