@@ -10,11 +10,8 @@ version 0.15.1.
     "express": "^4.15.2",<br>
     "mongodb": "^2.2.26"<br>
 `bower install`<br>
-"angular": "~1.5.8",<br>
+"angular": "^1.4.0",<br>
     "bootstrap": "^3.2.0",<br>
-    "aos": "^2.1.1",<br>
-    "jquery.stellar": "^0.6.2",<br>
-    "fullcalendar": "^3.0.1"<br>
     
 ## Build & development
 Run `node hibrid.js` to start the backend server <br>
